@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio nº 1 - Apellido</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="stilos.css">
+</head>
+<body>
+    <nav class= "navbar navbar-expand-lg navbar-dark bg-primary">
+        <a href="/" class= "navbar-brand" >
+          FRASE App
+      </a>
+    </nav>
+
+    <div class= "row p-2">
+        <div class="col-md-3 ">
+            <div id="cargaValores" class="card">
+                <div class="form-row"> 
+                    <div class="form-group col-md-6">
+                        Número 1:
+                        <input type="number" class="col" name="numeros" placeholder="3">
+                    </div>
+                    <div class="form-group col-md-6">
+                        Número 2:
+                        <input type="number" class="col" name="numeros" placeholder="5">
+                    </div>
+                </div>
+                <div class="form-row"> 
+                    <div class="form-group col-md-6">
+                        Número 3:
+                        <input type="number" class="col" name="numeros" placeholder="1">
+                    </div>
+                    <div class="form-group col-md-6">
+                        Número 4:
+                        <input type="number" class="col" name="numeros" placeholder="8">
+                    </div>
+                </div>
+                <!--Botón para generar las acciones solicitadas en el ejercicio-->
+                <input type="button" onclick="Calcular()" class="btn btn-success" value="Cargar">
+            </div>
+            <br>
+            <div id="mostrarValores" class=""></div>
+        </div>
+
+        <div id="cuadros1" class="col-md-4"></div>
+        <div id="cuadros2" class="col-md-4"></div>
+    </div>
+    
+    <div id="muestraResultados"></div>
+    <script src="index.js"></script>
+</body>
+</html>
